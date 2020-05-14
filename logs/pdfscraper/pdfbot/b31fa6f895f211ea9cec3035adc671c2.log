@@ -1,0 +1,294 @@
+2020-05-14 20:23:45 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: pdfscraper)
+2020-05-14 20:23:45 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.20.0, Twisted 20.3.0, Python 3.7.6 (default, Jan  8 2020, 13:42:34) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-16.7.0-x86_64-i386-64bit
+2020-05-14 20:23:45 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'pdfscraper', 'LOG_FILE': 'logs/pdfscraper/pdfbot/b31fa6f895f211ea9cec3035adc671c2.log', 'NEWSPIDER_MODULE': 'pdfscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['pdfscraper.spiders']}
+2020-05-14 20:23:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-14 20:23:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-14 20:23:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-14 20:23:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['pdfscraper.pipelines.WriteToCsv']
+2020-05-14 20:23:45 [scrapy.core.engine] INFO: Spider opened
+2020-05-14 20:23:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-05-14 20:23:45 [py.warnings] WARNING: /opt/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:59: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.privacy.gov.ph/ in allowed_domains.
+  warnings.warn("allowed_domains accepts only domains, not URLs. Ignoring URL entry %s in allowed_domains." % domain, URLWarning)
+
+2020-05-14 20:23:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2020-05-14 20:23:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.privacy.gov.ph/robots.txt> (referer: None)
+2020-05-14 20:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.privacy.gov.ph/data-privacy-act-primer/> (referer: None)
+2020-05-14 20:23:58 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_PIA_0618.pdf
+2020-05-14 20:23:58 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.privacy.gov.ph': <GET https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_PIA_0618.pdf>
+2020-05-14 20:23:58 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/uploads/DPA-of-2012.pdf
+2020-05-14 20:23:58 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/uploads/IRR-of-the-DPA.pdf
+2020-05-14 20:24:01 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.privacy.gov.ph/commission-issued-orders/> (referer: None)
+2020-05-14 20:24:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.privacy.gov.ph/commission-issued-orders/>: HTTP status code is not handled or not allowed
+2020-05-14 20:24:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.privacy.gov.ph/advisory-opinions/> (referer: None)
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_PIA_0618.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-001.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-002.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-003.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-004.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-005.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-006.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-007.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-008.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-009.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-010.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-011.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-012.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-013.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-014.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-015.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-016.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-017.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-018.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-019.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-020.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-021.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-022.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-023.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-024.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-025.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-026.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-027.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-028.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-029.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-030.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-031.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-032.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-033.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-034.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-035.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-036.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-037.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-038.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-039.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-040.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-041.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-042.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-043.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-044.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-045.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-046.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-047.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-048.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-049.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-050.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-051.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-052.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-053.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-054.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-055.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-056.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-057.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-058.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-059.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-060.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-061.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-062.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-063.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPC_AdvisoryOpinionNo._2017-064.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPCAONo.2017-065.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPCAONo.2017-066.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPCAONo.2017-068.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/NPCAONo.2017-070.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/v1[Redacted] Advisory Opinion No. 2017-071.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/v1[Redacted] Advisory Opinion No. 2017-074.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/NPCAONo.2018-001.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/NPCAONo.2018-002.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/NPCAONo.2018-003.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-004.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-005.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/NPCAONo.2018-006.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-007.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-008.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-009.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-010.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/NPCAONo.2018-011.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-012.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-013.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-015.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-016.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-017.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-018.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-019.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-020.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-021.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-022.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-024.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-025.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-026.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-027.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-028.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-029.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-030.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOPNo.2018-031.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo.2018-032.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo.2018-033.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-034.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-035.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo.2018-036.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo.2018-037.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AdOpNo.2018-038.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-039.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-040.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-041.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-042.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-043.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-044.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-045.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-046.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-047.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-049.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-050.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-051.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-052.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-053.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-054.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-056.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-057.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-058.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-059.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-060.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-061.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-062.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-063.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-064.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-066.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-067.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/v1[Redacted] Advisory Opinion No. 2018-068.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-069.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-070.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-071.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-072.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/v1[Redacted] Advisory Opinion No. 2018-073.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo.2018-075.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-076.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-077.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-078.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/v1[Redacted] Advisory Opinion No. 2018-079.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-080.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-081.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-083.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-084.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-088.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2018/AONo_2018-090.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-001.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-002.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-004.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-005.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-006.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-007.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-009.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-010.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-011.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-012.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-013.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-014.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-017.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-018.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-019.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-020.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-021.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-022.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-023.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-024.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-025.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-026.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-027.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-028.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-029.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-030.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-031.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-032.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-034.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-035.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-036.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-037.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-038.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/v1[Redacted] Advisory Opinion No. 2019-039.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-040.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-041.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-042.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-043.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-044.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-045.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-046.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/[Redacted] Advisory Opinion No. 2019-047.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/AdOps_2019-048.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/[Redacted] Advisory Opinion No. 2019-049.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/[Redacted] Advisory Opinion No. 2019-050.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/[Redacted] Advisory Opinion No. 2019-051.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2019/[Redacted] Advisory Opinion No. 2019-052.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-003.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-004.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-005.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-006.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-007.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-008.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-009.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-010.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-011.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-012.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-013.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-014.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-015.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-018.pdf
+2020-05-14 20:24:02 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/advopn/2020/[Redacted] Advisory Opinion No. 2020-019.pdf
+2020-05-14 20:24:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.privacy.gov.ph/advisories/> (referer: None)
+2020-05-14 20:24:05 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_PIA_0618.pdf
+2020-05-14 20:24:05 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/Final_Advisory18-02_6.26.18.pdf
+2020-05-14 20:24:05 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_AdvisoryNo.2017-03.pdf
+2020-05-14 20:24:05 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_Advisory_No.2017-02.pdf
+2020-05-14 20:24:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.privacy.gov.ph/memorandum-circulars/> (referer: None)
+2020-05-14 20:24:13 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/files/attachments/nwsltr/NPC_PIA_0618.pdf
+2020-05-14 20:24:13 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/uploads/2017/08/NPC17-01_Appendix-1.pdf
+2020-05-14 20:24:13 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/uploads/2020/05/DOH-mc2020-0016.pdf
+2020-05-14 20:24:13 [pdfbot] INFO: https://www.privacy.gov.ph/wp-content/uploads/2020/05/jmc2020-0002v1.pdf
+2020-05-14 20:24:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-05-14 20:24:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1721,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 51921,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/404': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 5, 14, 14, 54, 13, 283515),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 231,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 54898688,
+ 'memusage/startup': 54898688,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 223,
+ 'request_depth_max': 1,
+ 'response_received_count': 6,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2020, 5, 14, 14, 53, 45, 678403)}
+2020-05-14 20:24:13 [scrapy.core.engine] INFO: Spider closed (finished)
