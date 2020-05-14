@@ -1,0 +1,14 @@
+README.md
+setup.py
+pdfscraper/__init__.py
+pdfscraper/items.py
+pdfscraper/middlewares.py
+pdfscraper/pipelines.py
+pdfscraper/settings.py
+pdfscraper/spiders/__init__.py
+pdfscraper/spiders/pdfbot.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
