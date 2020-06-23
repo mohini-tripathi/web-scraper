@@ -6,9 +6,6 @@ This project deals with web crawling and web scraping framework, used to crawl w
 
 #### Requirements
 - Python 3.5+ 
-- Works on Linux
-- Windows
-- macOS
 - Scrapy
 
 #### Installation Requirement
