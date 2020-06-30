@@ -2,7 +2,7 @@
 
 #### Overview
 
-This project deals with web crawling and web scraping framework, used to crawl websites and extract structured data (pdf, in this case) from their webpages. It can be used for organised collection of pdf files.
+This project is about web crawling and web scraping framework, used to crawl websites and extract structured data (pdf, in this case) from their webpages. It can be used for organised collection of pdf files.
 
 #### Requirements
 - Python 3.5+ 
