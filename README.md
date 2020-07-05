@@ -19,7 +19,7 @@ Check out the install section in the documentation at https://docs.scrapy.org/en
 - Clone this repository
 ```git clone repository's link``` 
 - Go into Project's Directory 
-- Install all other dependencies 
+- Install all the missing dependencies
 ``` cd directory-name``` 
 - Run  ```scrapy crawl file's name``` in terminal
 
