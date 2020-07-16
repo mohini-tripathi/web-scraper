@@ -34,4 +34,6 @@ Check out the install section in the documentation at https://docs.scrapy.org/en
 - Use curl commands to send http requests 
 ```curl http://localhost:6800/schedule.json -d project=pdfscraper -d spider=pdfbot``` 
 
+CA:B1:AF:0D:2B:EC:8F:81:74:61:0B:A4:9F:FB:C6:AE:3C:3B:50:58
+
 
