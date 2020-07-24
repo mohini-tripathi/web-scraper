@@ -9,7 +9,7 @@ This project is about web crawling and web scraping framework, used to crawl web
 - Scrapy
 
 #### Installation Requirement
-The quick way: 
+Follow the quick way: 
 
 ```pip install scrapy```
 Check out the install section in the documentation at https://docs.scrapy.org/en/latest/intro/install.html for more details.
