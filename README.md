@@ -4,9 +4,10 @@
 
 This project is about web crawling and web scraping framework, used to crawl websites and extract structured data (pdf, in this case) from their webpages. It can be used for organised collection of pdf files.
 
-#### Requirements
+#### Requirements to run this project
 - Python 3.5+ 
 - Scrapy
+
 
 #### Installation Requirement
 Follow the quick way: 
