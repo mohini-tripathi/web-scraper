@@ -7,6 +7,7 @@ This project is about web crawling and web scraping framework, used to crawl web
 #### Requirements to run this project
 - Python 3.5+ 
 - Scrapy
+- Nodejs
 
 
 #### Installation Requirement
